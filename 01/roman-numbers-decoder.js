@@ -13,7 +13,7 @@ function romansToNumbers(string) {
     currentNumber,
     previousNumber = 0,
     arrangedNumbers = string.split("").reverse();
-  for (const character of string.split("").reverse()) {
+  for (const character of arrangedNumbers) {
     currentNumber = ROMAN_NUMBER_VALUES.get(character);
     if (currentNumber >= previousNumber) {
       resultNumber += currentNumber;
