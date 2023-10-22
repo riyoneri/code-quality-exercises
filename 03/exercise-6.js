@@ -1,3 +1,3 @@
-function maxNumber(a, b, c) {
+function getMaxNumber(a, b, c) {
   return Math.max(a, b, c);
 }
