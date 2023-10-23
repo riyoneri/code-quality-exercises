@@ -1,5 +1,6 @@
 const roundRobin = (jobs, slice, index) => {
   let timeTaken = 0;
+
   while (jobs[index] > 0) {
     jobs = jobs.map((job) => {
       if (job > slice) {
@@ -8,7 +9,6 @@ const roundRobin = (jobs, slice, index) => {
       }
 
       timeTaken += job;
-      return 0;
     });
   }
 
