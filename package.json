@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "eslintConfig": {
-    "extends": "plugin:unicorn/recommended"
+    "extends": "plugin:unicorn/recommended",
+    "rules": {
+      "unicorn/no-array-reduce": "off"
+    }
   },
   "devDependencies": {
     "eslint": "^8.52.0",
