@@ -9,21 +9,21 @@ function romansToNumbers(string) {
     ["M", 1000],
   ]);
 
-  let resultNumber = 0,
+  let output = 0,
     currentNumber,
     previousNumber = 0,
-    arrangedNumbers = string.split("").reverse();
+    arrangedNumbers = [...string].reverse();
 
   for (const character of arrangedNumbers) {
     currentNumber = romanNumberValues.get(character);
 
     if (currentNumber >= previousNumber) {
-      resultNumber += currentNumber;
+      output += currentNumber;
     } else {
-      resultNumber -= currentNumber;
+      output -= currentNumber;
     }
-    
+
     previousNumber = currentNumber;
   }
-  return resultNumber;
+  return output;
 }
