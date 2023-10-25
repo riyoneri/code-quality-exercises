@@ -1,0 +1,22 @@
+{
+  "name": "code-quality-exercises-4",
+  "version": "1.0.0",
+  "description": "Exercises about improvement of code quality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "eslintConfig": {
+    "extends": "plugin:unicorn/recommended",
+    "rules": {
+      "unicorn/no-array-reduce": "off"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-plugin-unicorn": "^48.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
