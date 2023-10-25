@@ -1,5 +1,5 @@
 {
-  "name": "code-quality-exercises-2",
+  "name": "code-quality-exercise-1",
   "version": "1.0.0",
   "description": "Exercises about improvement of code quality",
   "main": "index.js",
@@ -13,8 +13,7 @@
     "eslint": "^8.52.0",
     "eslint-plugin-unicorn": "^48.0.1"
   },
-
   "eslintConfig": {
-    "extends": "plugin:unicorn/recommended"
-  }
+		"extends": "plugin:unicorn/recommended"
+	}
 }
